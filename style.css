@@ -17,6 +17,9 @@ html {
 }
 
 .card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 24px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 15px 30px -10px hsl(220, 15%, 55%);
@@ -27,7 +30,6 @@ html {
 
 .card-image img {
     border-radius: 10px;
-    margin-bottom: 24px;
     width: 100%;
 }
 
@@ -38,9 +40,15 @@ html {
 .card-content h1 {
     font-size: 22px;
     letter-spacing: 0px;
-    line-height: 1.2;
-    margin-bottom: 22px;
+    line-height: 1.2;  
 }
+
+.card h2,
+.card p {
+  margin: 0;                     
+  line-height: 1.2;              
+}
+
 
 .card-content p {
     font-size: 15px;
